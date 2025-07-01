@@ -2,41 +2,8 @@
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-/* Remove default margin/padding */
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    /* Prevent horizontal scroll */
-}
-
-/* Force container to be edge-to-edge */
-.container {
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-/* Specific override for GitHub Pages wrapper */
-.main-content {
-    max-width: 100% !important;
-    padding: 0 !important;
 }
 
 section {
-    scroll-padding-top: 4rem;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
-}
-
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    border: 2px solid red;
 }
