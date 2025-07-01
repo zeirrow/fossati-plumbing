@@ -1,5 +1,8 @@
 * {
     scroll-behavior: smooth;
+}
+
+section {
     scroll-padding-top: 4rem;
 }
 
