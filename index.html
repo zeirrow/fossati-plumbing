@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fossati Plumbing | Trusted Plumbing Services in Putnam & Westchester Counties</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0d6efd',
+            secondary: '#6c757d',
+            accent: '#ff6b35',
+            dark: '#212529',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans antialiased text-gray-800">
+  <!-- Header/Navigation -->
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="flex items-center">
+        <i class="fas fa-tools text-3xl text-blue-600 mr-2"></i>
+        <span class="text-2xl font-bold text-primary">Fossati <span class="text-accent">Plumbing</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="#services" class="font-medium hover:text-blue-600 transition">Services</a>
+        <a href="#about" class="font-medium hover:text-blue-600 transition">About</a>
+        <a href="#testimonials" class="font-medium hover:text-blue-600 transition">Testimonials</a>
+        <a href="#contact" class="font-medium hover:text-blue-600 transition">Contact</a>
+      </nav>
+
+      <!-- Mobile Toggle Button -->
+      <div class="md:hidden">
+        <button aria-label="mobile-nav-toggle" id="mobile-nav-toggle" class="text-gray-800 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-nav" class="md:hidden hidden px-4 pb-4 bg-white shadow-md">
+      <a href="#services" class="block py-2 text-gray-800 font-medium hover:text-blue-600">Services</a>
+      <a href="#about" class="block py-2 text-gray-800 font-medium hover:text-blue-600">About</a>
+      <a href="#testimonials" class="block py-2 text-gray-800 font-medium hover:text-blue-600">Testimonials</a>
+      <a href="#contact" class="block py-2 text-gray-800 font-medium hover:text-blue-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center text-white py-20 bg-gradient-to-r from-blue-800 to-blue-700"
+    style="background-image: url('./img/Fossati-plumbing-van.jpg');">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-800 to-blue-700/20"></div>
+    <div class="relative z-10 container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Get the Best Solutions for Your Plumbing Problems</h1>
+        <p class="text-xl mb-8">Quickly and easily! Our team of expert plumbers uses the latest technology to handle any
+          issue you may have.!</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="tel:8452780300"
+            class="bg-accent hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition">
+            <i class="fas fa-phone mr-2"></i> (845) 278-0300
+          </a>
+          <a href="#contact"
+            class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-6 rounded-lg text-center transition">
+            <i class="fas fa-envelope mr-2"></i> Contact Us
+          </a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-right">
+        <div class="bg-white p-6 rounded-lg shadow-xl text-gray-800 max-w-md">
+          <h3 class="text-2xl font-bold mb-4 text-center text-primary">$100 OFF</h3>
+          <p class="text-center mb-4">Your first service call when you mention this ad!</p>
+          <form class="space-y-4">
+            <input type="text" placeholder="Your Name"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent">
+            <input type="email" placeholder="Your Email"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent">
+            <input type="tel" placeholder="Your Phone"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent">
+            <button type="submit"
+              class="w-full bg-accent hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg transition">
+              Claim Your Discount
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Highlights -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Water Softener Card -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-left">
+          <div class="text-5xl text-primary mb-4 text-center">
+            <i class="fas fa-water"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-center">Water Softener Systems</h3>
+          <p class="mb-4 flex-grow">Expert installation and repair of water softening systems for your home or business.
+            Improve your water quality today.</p>
+          <div class="space-y-3">
+            <a href="#contact"
+              class="block bg-primary hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg text-center transition">
+              <i class="fas fa-envelope mr-2"></i> Get a Quote
+            </a>
+            <a href="tel:8452780300"
+              class="block border border-primary text-primary hover:bg-gray-100 font-medium py-2 px-4 rounded-lg text-center transition">
+              <i class="fas fa-phone mr-2"></i> (845) 278-0300
+            </a>
+          </div>
+        </div>
+
+        <!-- Water Heater Card -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+          <div class="text-5xl text-primary mb-4 text-center">
+            <i class="fas fa-fire"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-center">Water Heater Services</h3>
+          <p class="mb-4 flex-grow">Professional installation, repair, and maintenance of all types of water heaters for
+            optimal performance.</p>
+          <div class="space-y-3">
+            <button
+              class="w-full bg-accent hover:bg-orange-600 text-white font-medium py-2 px-4 rounded-lg transition service-modal-trigger"
+              data-service="Water Heater">
+              <i class="fas fa-calendar-alt mr-2"></i> Schedule Service
+            </button>
+            <div class="text-center">
+              <a href="tel:8452780300"
+                class="block border border-accent text-accent hover:bg-gray-100 font-medium py-2 px-4 rounded-lg text-center transition">
+                <i class="fas fa-phone-volume mr-2"></i> Emergency Service
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Water Storage Card -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-right">
+          <div class="text-5xl text-primary mb-4 text-center">
+            <i class="fas fa-tint"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-center">Water Storage Solutions</h3>
+          <p class="mb-4 flex-grow">Reliable installation and maintenance of water storage tank systems for consistent
+            water supply.</p>
+          <div class="space-y-3">
+            <a href="/water-storage-solutions"
+              class="block bg-primary hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg text-center transition">
+              <i class="fas fa-info-circle mr-2"></i> Learn More
+            </a>
+            <a href="#contact"
+              class="block border border-primary text-primary hover:bg-gray-100 font-medium py-2 px-4 rounded-lg text-center transition">
+              <i class="fas fa-comments mr-2"></i> Chat With Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for service scheduling (hidden by default) -->
+  <div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-xl font-bold" id="modalServiceTitle">Schedule Service</h3>
+        <button aria-label="modalClose" id="modalClose" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <form id="serviceForm" class="space-y-4">
+        <input type="hidden" id="selectedService">
+        <div>
+          <label for="serviceName" class="block mb-1">Your Name</label>
+          <input type="text" id="serviceName"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" required>
+        </div>
+        <div>
+          <label for="servicePhone" class="block mb-1">Phone Number</label>
+          <input type="tel" id="servicePhone"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" required>
+        </div>
+        <div>
+          <label for="serviceDate" class="block mb-1">Preferred Date</label>
+          <input type="date" id="serviceDate"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" required>
+        </div>
+        <button type="submit"
+          class="w-full bg-accent hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg transition">
+          Schedule Now
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Problem/Solution Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-left">
+          <h2 class="text-3xl font-bold mb-6">LEAKY PIPES? CLOGGED DRAINS?</h2>
+          <p class="text-lg mb-6">As a home or business owner in Putnam County, you may sometimes face plumbing issues
+            that can be difficult to solve. Trying to fix these problems yourself is often not recommended if you do not
+            have plumbing experience or the right tools.</p>
+          <p class="text-lg mb-6">You need a reliable plumbing service to do the job quickly and efficiently without
+            breaking your budget. Look no further than Fossati Plumbing!</p>
+          <div class="bg-gray-100 p-6 rounded-lg border-l-4 border-accent">
+            <p class="italic mb-2">"They were on time, clean, neat and very knowledgeable. Our job was completed in one
+              visit by Mike, smart, personable plumber. I recommend calling them should you find yourself needing a
+              plumber."</p>
+            <p class="font-bold">— Randy F. via Facebook</p>
+          </div>
+        </div>
+        <div class="md:w-1/2 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-right">
+          <img src="./img/leaky-pipe.webp" alt="Plumber at work" class="rounded-lg shadow-lg w-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Residential Services -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+        <h2 class="text-3xl font-bold mb-4">GET QUALITY PLUMBING SOLUTIONS FOR YOUR HOME!</h2>
+        <p class="text-xl max-w-3xl mx-auto">Are you having trouble with a leaking faucet or experiencing water pressure
+          issues? Our certified, family-owned, and operated company can help with all your plumbing needs.</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+          <p class="mb-6 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">We handle everything from basic plumbing repairs to installing appliances, water heaters, and
+            water filtration systems, as well as new construction and bathroom renovation plumbing work. You can count
+            on Fossati Plumbing for all your plumbing needs!</p>
+
+          <div class="bg-white p-6 rounded-lg shadow-md opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+            <h3 class="text-xl font-bold mb-4 text-primary">OUR RESIDENTIAL PLUMBING SERVICES INCLUDE:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Toilet repair</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Unclog drains up to 11/2"</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Pipe leak repairs</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Water pressure issues</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Professional installation of water filtration systems</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Diagnose water softener problems</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Gas line installation and repairs</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Pool shower installation</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Hot water heater inspection</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Plumbing inspection</span>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Outdoor hose bib repair and replacement</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+          <img src="./img/richie-fossati.png" alt="Residential plumbing"
+            class="rounded-lg shadow-lg w-full h-full object-cover max-h-[480px]">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial Services -->
+  <section class="py-16 bg-primary text-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 mb-10 md:mb-0 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+          <img src="./img/commercial-plumbing-service.png" alt="Commercial plumbing"
+            class="rounded-lg shadow-lg w-full h-full object-cover">
+        </div>
+
+        <div class="md:w-1/2 md:pl-10 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+          <h2 class="text-3xl font-bold mb-6">COMMERCIAL PLUMBING SERVICES</h2>
+          <h3 class="text-xl font-bold mb-4">KEEP YOUR COMMERCIAL PROPERTY RUNNING SMOOTHLY.</h3>
+          <p class="mb-6">As a business owner, you understand that plumbing problems can cause costly disruptions to
+            your operations. Commercial plumbing problems can be difficult to diagnose and resolve without the right
+            tools or experience.</p>
+          <p class="mb-8">Fossati Plumbing has been serving the needs of Westchester and Putnam County businesses for
+            over 40 years with our reliable commercial plumbing services. You can count on Fossati Plumbing & Water
+            Treatment if you are searching for a professional service for all your business plumbing needs.</p>
+
+          <div class="bg-white p-6 rounded-lg shadow-md text-gray-800">
+            <h3 class="text-xl font-bold mb-4 text-primary">OUR COMMERCIAL PLUMBING SERVICES INCLUDE:</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Commercial plumbing for new construction</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Full water treatment service</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Well tanks and pumps</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Commercial bathroom renovations</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-accent mt-1 mr-2"></i>
+                <span>Gas piping, including conversions</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Water Treatment Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+          <h2 class="text-3xl font-bold mb-6">FULL WATER TREATMENT SERVICES</h2>
+          <p class="mb-4">At Fossati Plumbing, we are experts in diagnosing and installing water softening and
+            filtration systems to combat the water issues we all experience in the Putnam and Westchester NY region.</p>
+          <p class="mb-6">Our water softening technicians have many years of experience under their belts, which is
+            exactly what you need for a reliable local water softening service. At Fossati Plumbing & Water Treatment we
+            are committed to keeping your residential and commercial water systems running smoothly!</p>
+          <a href="#contact"
+            class="bg-accent hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg inline-block transition">
+            LEARN MORE
+          </a>
+        </div>
+        <div class="md:w-1/2 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+          <img src=".//img/water-treatment.png" alt="Water treatment system" class="rounded-lg shadow-lg w-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel Section -->
+  <section id="testimonials" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+        <h2 class="text-3xl font-bold mb-4">WHAT OUR CUSTOMERS SAY</h2>
+        <div class="flex justify-center items-center">
+          <div class="flex items-center mr-4">
+            <i class="fas fa-star text-yellow-400 text-2xl"></i>
+            <i class="fas fa-star text-yellow-400 text-2xl"></i>
+            <i class="fas fa-star text-yellow-400 text-2xl"></i>
+            <i class="fas fa-star text-yellow-400 text-2xl"></i>
+            <i class="fas fa-star text-yellow-400 text-2xl"></i>
+          </div>
+          <span class="text-xl font-bold">4.9</span>
+          <span class="text-gray-600 ml-1">(216 Google Reviews)</span>
+        </div>
+      </div>
+
+      <div class="relative opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+        <!-- Carousel wrapper -->
+        <button aria-label="prev" onclick="scrollCarousel(1)"
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md p-2 hover:bg-gray-100 transition -mr-4">
+          <i class="fas fa-chevron-right text-gray-700 text-xl"></i>
+        </button>
+        <button aria-label="next" onclick="scrollCarousel(-1)"
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md p-2 hover:bg-gray-100 transition -ml-4">
+          <i class="fas fa-chevron-left text-gray-700 text-xl"></i>
+        </button>
+
+        <div id="testimonial-carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 scrollbar-hide">
+          <!-- Cards populated via JS -->
+        </div>
+
+        <!-- Navigation buttons -->
+      </div>
+
+
+      <div class="text-center mt-10 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+        <a href="#" class="inline-flex items-center text-blue-700 font-bold hover:underline">
+          <span>READ MORE REVIEWS</span>
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="relative bg-cover bg-center text-white py-20 bg-gradient-to-r from-accent to-accent"
+    style="background-image: url('./img/leaky-pipe.webp');">
+    <div class="absolute inset-0 bg-gradient-to-r from-accent to-accent/20"></div>
+
+    <div class="relative z-10 container mx-auto px-4 text-center opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+      <h2 class="text-3xl font-bold mb-6">GOODBYE TO PLUMBING PROBLEMS WITH FOSSATI PLUMBING</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto">Experience reliable, expert plumbing services for both residential and
+        commercial properties. With our unbeatable customer service and superior expertise, you can trust us to be your
+        local plumber. We are proud to have served Westchester and Putnam County for over 40 years and look forward to
+        serving you!</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="tel:8452780300"
+          class="bg-white hover:bg-gray-100 text-accent font-bold py-3 px-6 rounded-lg transition">
+          <i class="fas fa-phone mr-2"></i> CALL NOW
+        </a>
+        <a href="#contact" class="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition">
+          <i class="fas fa-envelope mr-2"></i> GET A QUOTE
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+        <h2 class="text-3xl font-bold mb-4">OUR CERTIFICATIONS</h2>
+        <p class="text-xl">Proudly serving the community with certified expertise</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl text-primary mb-4">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3 class="font-bold mb-2">New York State Certified</h3>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl text-primary mb-4">
+            <i class="fas fa-female"></i>
+          </div>
+          <h3 class="font-bold mb-2">Woman Owned Enterprise</h3>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl text-primary mb-4">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="font-bold mb-2">BBB Accredited A+ Rating</h3>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <div class="text-4xl text-primary mb-4">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3 class="font-bold mb-2">Master Plumber Licensed</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-br from-blue-50 to-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row gap-12">
+        <!-- Info Panel -->
+        <div class="md:w-1/2 space-y-10">
+          <div class="text-center mb-6 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+            <h2 class="text-4xl font-bold text-blue-900 mb-4">Let’s Talk Plumbing</h2>
+            <p class="text-gray-600">Call, email, or just drop us a message. We're here to help with expert solutions
+              and fast response.</p>
+          </div>
+
+          <div class="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+            <h3 class="text-xl font-semibold mb-2 text-blue-700">📍 Fossati Plumbing</h3>
+            <p>3881 Danbury Rd Suite C,<br>Brewster, NY 10509</p>
+            <p class="mt-3"><strong>Contact:</strong> Debi Fossati</p>
+            <p><strong>Tel:</strong> <a href="tel:8452780300" class="text-blue-600 hover:underline">845-278-0300</a></p>
+          </div>
+
+          <div class="opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+            <h4 class="text-lg font-semibold text-blue-700 mb-2">🕒 Business Hours</h4>
+            <p>Mon - Fri: 8:00 am - 4:00 pm</p>
+            <p>Sat - Sun: Closed</p>
+          </div>
+
+          <div class="opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+            <h4 class="text-lg font-semibold text-blue-700 mb-4">📌 Service Areas</h4>
+            <div class="grid grid-cols-2 gap-4 text-sm text-gray-700">
+              <div>
+                <h5 class="font-semibold text-gray-900 mb-2">Westchester County</h5>
+                <ul class="space-y-1">
+                  <li>North Salem</li>
+                  <li>South Salem</li>
+                  <li>Lewisboro</li>
+                  <li>Pound Ridge</li>
+                  <li>Bedford</li>
+                  <li>Katonah</li>
+                  <li>Somers</li>
+                  <li>Cross River</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="font-semibold text-gray-900 mb-2">Putnam County</h5>
+                <ul class="space-y-1">
+                  <li>Brewster</li>
+                  <li>SouthEast</li>
+                  <li>Carmel</li>
+                  <li>Kent</li>
+                  <li>Lake Carmel</li>
+                  <li>Mahopac</li>
+                  <li>Patterson</li>
+                  <li>Putnam Valley</li>
+                </ul>
+              </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-600">Also serving Dutchess County: Pawling, Holmes, Stormville and beyond.
+            </p>
+          </div>
+
+          <div class="mt-6 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+            <h4 class="font-semibold text-blue-700 mb-2">💳 Finance with Synchrony</h4>
+            <img src="./img/ab-seal-horizontal-blue.svg.webp" alt="Synchrony Financing" class="h-10 mb-4">
+
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="md:w-1/2 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+          <div class="bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-2xl">
+            <h3 class="text-2xl font-bold text-blue-800 mb-6">💬 Get in Touch</h3>
+            <form class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input id="name" type="text"
+                  class="w-full mt-1 px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input id="email" type="email"
+                  class="w-full mt-1 px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400" />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                <input id="phone" type="tel"
+                  class="w-full mt-1 px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400" />
+              </div>
+              <div>
+                <label for="service" class="block text-sm font-medium text-gray-700">Service Needed</label>
+                <select id="service"
+                  class="w-full mt-1 px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400">
+                  <option value="">Select a service</option>
+                  <option value="residential">Residential Plumbing</option>
+                  <option value="commercial">Commercial Plumbing</option>
+                  <option value="water-treatment">Water Treatment</option>
+                  <option value="emergency">Emergency Service</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" rows="4"
+                  class="w-full mt-1 px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+              </div>
+              <button type="submit"
+                class="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-lg transition shadow-lg">
+                🚀 SEND MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll" data-animate="fade-up">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-8 md:mb-0">
+          <a href="#" class="flex items-center mb-4">
+            <i class="fas fa-tools text-3xl text-accent mr-2"></i>
+            <span class="text-2xl font-bold text-white">Fossati <span class="text-accent">Plumbing</span></span>
+          </a>
+          <p class="mb-4">Trusted for generations of expert plumbing services in Putnam & Westchester Counties NY.</p>
+
+          <!-- Social Media Section -->
+          <div class="mb-4">
+            <h4 class="text-lg font-bold mb-3">FOLLOW US</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-white hover:text-accent transition text-xl" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white hover:text-accent transition text-xl" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-white hover:text-accent transition text-xl" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-white hover:text-accent transition text-xl" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="text-white hover:text-accent transition text-xl" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-white hover:text-accent transition text-xl" aria-label="Yelp">
+                <i class="fab fa-yelp"></i>
+              </a>
+            </div>
+          </div>
+
+          <p class="text-sm text-gray-400">© 2023 Fossati Plumbing. All rights reserved.</p>
+        </div>
+
+        <div class="mb-8 md:mb-0">
+          <h4 class="text-lg font-bold mb-4">QUICK LINKS</h4>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-accent transition">Services</a></li>
+            <li><a href="#about" class="hover:text-accent transition">About Us</a></li>
+            <li><a href="#testimonials" class="hover:text-accent transition">Testimonials</a></li>
+            <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="mb-8 md:mb-0">
+          <h4 class="text-lg font-bold mb-4">SERVICES</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-accent transition">Residential Plumbing</a></li>
+            <li><a href="#" class="hover:text-accent transition">Commercial Plumbing</a></li>
+            <li><a href="#" class="hover:text-accent transition">Water Treatment</a></li>
+            <li><a href="#" class="hover:text-accent transition">Emergency Services</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-bold mb-4">CONTACT</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-2 text-accent"></i>
+              <span>3881 Danbury Rd Suite C, Brewster, NY 10509</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-2 text-accent"></i>
+              <a href="tel:8452780300" class="hover:underline">(845) 278-0300</a>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-2 text-accent"></i>
+              <a href="mailto:info@fossatiplumbing.com" class="hover:underline">info@fossatiplumbing.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+        <p>Master plumber license numbers: Putnam 31175, Westchester County 1726</p>
+        <p class="mt-2">NAICS + NIGP CODES: 236220 Plumbing and Heating Contractors, 91036 Heating, Air Conditioning,
+          and Ventilation Maintenance, Repair, and Installation Services, 91060 Plumbing Maintenance and Repair Services
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Floating CTA Button -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <a href="tel:8452780300"
+      title="Call Fossati Plumbing"
+      class="bg-accent hover:bg-orange-600 text-white rounded-full p-4 shadow-lg flex items-center justify-center transition animate-bounce">
+      <i class="fas fa-phone text-xl"></i>
+    </a>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
