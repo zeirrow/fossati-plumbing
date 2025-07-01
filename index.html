@@ -428,23 +428,23 @@
 
       <div class="relative opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll"
         data-animate="fade-up">
-        <!-- Carousel wrapper -->
-        <button aria-label="prev" onclick="scrollCarousel(1)"
-          class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md p-2 hover:bg-gray-100 transition -mr-4">
-          <i class="fas fa-chevron-right text-gray-700 text-xl"></i>
-        </button>
-        <button aria-label="next" onclick="scrollCarousel(-1)"
+        <!-- Fixed button positions -->
+        <button aria-label="prev" id="prevBtn"
           class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md p-2 hover:bg-gray-100 transition -ml-4">
           <i class="fas fa-chevron-left text-gray-700 text-xl"></i>
         </button>
 
-        <div id="testimonial-carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 scrollbar-hide">
-          <!-- Cards populated via JS -->
+        <button aria-label="next" id="nextBtn"
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full shadow-md p-2 hover:bg-gray-100 transition -mr-4">
+          <i class="fas fa-chevron-right text-gray-700 text-xl"></i>
+        </button>
+
+        <!-- Carousel container with proper classes -->
+        <div id="testimonial-carousel"
+          class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 scrollbar-hide px-10">
+          <!-- Cards will be populated by JavaScript -->
         </div>
-
-        <!-- Navigation buttons -->
       </div>
-
 
       <div class="text-center mt-10 opacity-0 translate-y-10 transition-all duration-700 animate-on-scroll"
         data-animate="fade-up">
@@ -455,7 +455,6 @@
       </div>
     </div>
   </section>
-
   <!-- CTA Section -->
   <section class="relative bg-cover bg-center text-white py-20 bg-gradient-to-r from-accent to-accent"
     style="background-image: url('./img/leaky-pipe.webp');">

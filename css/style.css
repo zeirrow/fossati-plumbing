@@ -1,18 +1,28 @@
 * {
     scroll-behavior: smooth;
-    padding: 0;
-    margin: 0;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
+/* Carousel styles */
+#testimonial-carousel {
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: grab;
 }
 
-.main-content {
-    max-width: 100% !important;
-    padding: 0 !important;
+#testimonial-carousel>div {
+    display: inline-block;
+    white-space: normal;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
