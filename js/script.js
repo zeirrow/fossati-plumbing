@@ -31,21 +31,58 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-  // Mobile navigation toggle
   const toggleBtn = document.getElementById("mobile-nav-toggle");
   const mobileNav = document.getElementById("mobile-nav");
-  if (toggleBtn && mobileNav) {
-    toggleBtn.addEventListener("click", () => {
-      mobileNav.classList.toggle("hidden");
-    });
+  const menuIcon = document.getElementById("menu-icon");
+  const navLinks = mobileNav.querySelectorAll("a");
 
-    // Auto-close nav when link is clicked
-    mobileNav.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        mobileNav.classList.add("hidden");
+  let isOpen = false;
+
+  // Toggle mobile menu
+  toggleBtn.addEventListener("click", () => {
+    isOpen = !isOpen;
+
+    if (isOpen) {
+      // Open menu
+      mobileNav.classList.remove("translate-y-full");
+      mobileNav.classList.add("translate-y-0");
+      toggleBtn.classList.add("rotate-90");
+
+      // Animate links in with staggered delay
+      navLinks.forEach((link, index) => {
+        setTimeout(() => {
+          link.classList.remove("translate-y-8", "opacity-0");
+          link.classList.add("translate-y-0", "opacity-100");
+        }, 100 * index);
+      });
+    } else {
+      // Close menu
+      mobileNav.classList.remove("translate-y-0");
+      mobileNav.classList.add("translate-y-full");
+      toggleBtn.classList.remove("rotate-90");
+
+      // Reset links animation
+      navLinks.forEach((link) => {
+        link.classList.add("translate-y-8", "opacity-0");
+        link.classList.remove("translate-y-0", "opacity-100");
+      });
+    }
+  });
+
+  // Close menu when clicking on links
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      isOpen = false;
+      mobileNav.classList.remove("translate-y-0");
+      mobileNav.classList.add("translate-y-full");
+      toggleBtn.classList.remove("rotate-90");
+
+      navLinks.forEach((link) => {
+        link.classList.add("translate-y-8", "opacity-0");
+        link.classList.remove("translate-y-0", "opacity-100");
       });
     });
-  }
+  });
 
   // Modal functionality
   document.querySelectorAll(".service-modal-trigger").forEach((button) => {
